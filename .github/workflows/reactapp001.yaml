@@ -40,6 +40,6 @@ jobs:
 
        
     - name: Deploy to Surge
-      run: surge ./build wasayreactapp001.surge.sh ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build wasayreactapp001.surge.sh --token ${{ secrets.SURGE_TOKEN }}
          
        
