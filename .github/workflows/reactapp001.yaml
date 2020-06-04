@@ -27,11 +27,11 @@ jobs:
       with:
            node-version: 12
        
-    - name: Prepare For Yarn Installation
     - uses: borales/actions-yarn@v2.0.0
       with:
         cmd: install # will run `yarn install` command
     - uses: borales/actions-yarn@v2.0.0
+      
     - name: Buil React App
       run: yarn build
         
